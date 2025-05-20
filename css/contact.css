@@ -1,0 +1,144 @@
+ body{
+  background-color: #2C2F33;
+  color: aliceblue;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 100%;
+  padding-bottom: 105px;
+   transition: background-color 0.3s ease;
+   
+}
+
+.skip{
+  margin: 0;
+      background-color: #2C2F33;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      
+}
+ 
+ .cont{
+  width:100%;
+  max-width: 400px;
+  background-color: #23272a;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(12, 12, 12, 0.3);
+ }
+
+ h3{
+  text-align: center;
+  margin-bottom:20px;
+  font-size: 22px;
+  color:#ffffff;
+ }
+ /*
+ form input[type="text"],
+ form input[type="email"],
+ form input[type="number"],
+ form textarea
+ */
+ .txt,.em,.nb,.issue{
+  width: 100%;
+  
+  padding: 10px 5px;
+      margin: 15px 0;
+      border: none;
+      border-bottom: 1.5px solid #ccc; /* light gray border */
+      background: transparent;
+      color: #ffffff;
+      font-size: 17px;
+      transition: border-color 0.3s ease;
+    }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    .em:focus,
+    .nb:focus,
+    .txt:focus,
+    .issue:focus {
+      outline: none;
+      border-bottom: 1.5px solid #615b5b; /* white on focus */
+    }
+
+    .issue{
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    button {
+      flex: 1;
+      padding: 10px;
+      background-color: #3b44c0;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit:hover {
+      background-color: #2f36a3;
+    }
+
+    .reset {
+      background-color:#424242;
+      color: #ffffff;
+    }
+
+    .reset:hover {
+         background-color: #615b5b;
+    }
+ 
+ .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #2C2F33;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer i{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  padding: 9px;
+    transition: color 0.2s ease, background-color 0.2s ease,
+    border-shadow 0.3s ease;
+  }
+
+.footer i:hover {
+  background-color: rgba(66, 133, 244, 0.1); /* Light background on hover */
+  color: #4285F4;  /* Change icon color on hover */
+  box-shadow: 0 4px 8px rgba(66, 133, 244, 0.2); /* Light shadow for that hovering box effect */
+  transform: scale(1.05); /* Subtle grow effect */
+}
+
+/* Active/click effect with subtle shrinking */
+.footer i:active {
+  background-color: rgba(66, 133, 244, 0.2); /* Slightly darker blue on click */
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3); /* Darker shadow on click */
+  transform: scale(0.95); /* Slight shrink on click */
+}
+

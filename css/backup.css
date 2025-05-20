@@ -1,0 +1,57 @@
+body{
+  background-color: #2C2F33;
+  color: aliceblue;
+  padding-bottom: 105px;
+  margin: 0px;
+  font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  height: 100%;}
+
+
+.confirm-overlay {
+      position: fixed;
+      top: 0; left:0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      pointer-events: auto;
+    }
+
+    .confirm-box {
+      background: #2a2a2a;
+      color: #f1f1f1;
+      border-radius: 16px;
+      padding: 24px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      text-align: center;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .confirm-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .confirm-buttons button {
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .ok-btn {
+      background: #3b44c0;
+      color: white;
+    }
+
+    .ok-btn:hover {
+      box-shadow: 0 0 12px #3b44c0;
+  transform: translateY(-3px);
+    }

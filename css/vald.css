@@ -1,0 +1,45 @@
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #2C2F33;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.password-box{
+  background-color: #23272a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
+  text-align: center;
+  width: 300px;
+}
+
+
+.password-input{
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.submit-butn{
+background: #3b44c0;
+color: white;
+font-weight: bold;
+border: none;
+padding: 10px;
+border-radius: 5px;
+margin-top: 10px;
+cursor: pointer;
+}

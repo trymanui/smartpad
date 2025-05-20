@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+</head>
+<body>
+  <div class="home-header">
+       <i class="menu-icon" onclick="togglemenu()">&#9776;</i>
+   <p class="header-text">SMART PAD</p>
+
+  </div>
+<!--side menu-->
+  <div class="side-menu" id="sidemenu">
+<div class="menu-header">Menu
+<span class="close-btn" onclick="togglemenu()">&times;</span>
+</div>
+<a href="#" onclick="navigateto('contact.html')">Contact Us</a>
+<a href="#" onclick="navigateto('backup.html')">Add Backup</a>
+</div>
+  <div class="overlay" onclick="togglemenu()"></div>
+  <div class="main-inputs">
+  <div class="input-field">
+    <label class="label">Secert Code Name</label>
+    <input class="app-name" id="user" placeholder="Name Your Code As" autocomplete="off" required>
+    <label class="label">Secret code</label>
+    <input class="app-name" id="password" placeholder="Enter Your Code" autocomplete="off" required>
+    <label class="label">Description</label>
+    <textarea class="app-name" id="desp" rows="3" placeholder="Code Related Information (Optional)"></textarea>
+    <p class="alert" style="color:brown; font-weight: 900; font-size: 1.1rem;"></p>
+  </div>
+</div>
+  <div class="bottom">
+<button class="store">Store</button>
+  </div>
+  
+  <div class="footer">
+    <i class="fas fa-home" id="homebtn" style="color: white;"></i>
+    <i class="fas fa-floppy-disk" id="savebtn" style="color: white;"></i>
+    </div>
+    <script type="module" src="javascript/home.js"></script>
+    <script>
+      window.togglemenu=function()
+{
+  document.body.classList.toggle('menu-open');
+
+}
+
+window.navigateto=function(page){
+  document.body.classList.remove('menu-open');
+  setTimeout(()=>{
+    window.location.href=page;
+  },80);
+}
+    </script>
+  </div>
+</body>
+</html>

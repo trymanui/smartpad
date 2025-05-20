@@ -1,0 +1,241 @@
+body{
+  background-color: #2C2F33;
+  color: aliceblue;
+  padding: 0px;
+  margin: 0px;
+  /*font-family: 'Segoe UI' sans-serif;*/
+height: 100%;
+  padding-bottom: 105px;
+   transition: background-color 0.3s ease;
+}
+
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      padding: 15px;
+      display: inline-block;
+      color: #e4dddd;
+      margin-left: 0px;
+      padding-left: 0%;
+    }
+
+    .side-menu {
+      position: fixed;
+      top: 0;
+      left: -260px;
+      width: 260px;
+      height: 100%;
+      background-color: #1f1f1f;
+      color: #3b44c0;
+      transition: left 0.3s ease;
+      z-index: 1001;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #333;
+      font-size: 22px;
+      color: #3b44c0;
+      font-weight: bold;
+    }
+
+    .close-btn {
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .side-menu a {
+      padding: 15px 20px;
+      font-size: 17px;
+      color: #f1f1f1;
+      text-decoration: none;
+      border-top: 1px solid #2e2e2e;
+      transition-property: background-color;
+      transition-duration:0.2s;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+    }
+
+    .side-menu a:hover {
+      background-color: #444;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 1000;
+    }
+
+    .menu-open .side-menu {
+      left: 0;
+    }
+
+    .menu-open .overlay {
+      display: block;
+    }
+
+.input-field{
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.label{
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+  
+}
+
+.app-name{
+  
+  background-color: transparent;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 0.7rem;
+  font-size: 1rem;
+  color: #b6b7c7;
+  border-color:#ecedf3;
+  box-shadow: 0 0 5px #e2e2eb;
+transition: all 0.3s ease;
+
+}
+
+.app-name:placeholder{
+  color: #aaa;
+}
+.app-name:focus {
+  border-color:#3b44c0;
+  box-shadow: 0 0 8px #3b44c0;
+  border-width: 2px;
+
+  border-width: 2px;
+  outline: none;
+}
+
+.home-header{
+  top:0px;
+  left:0px;
+  right:0px;
+  position:fixed;
+  height:50px;
+  width:100%;
+  display:flex;
+  
+  align-items:center;
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:#5865f2;
+  background-color:#3b44c0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 55px;;
+  }
+.menu-icon{
+  margin-left: 15px;
+  flex-shrink: 0;
+  
+}
+.header-text{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+  .bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+  }
+
+
+  textarea{
+    resize: none;
+    padding-bottom: 46px;
+  }
+  .store{
+      text-decoration:none;
+     font-size:1.3rem;
+     color:white;
+     border: none;
+     background-color:#3b44c0; 
+     font-family:Arial, Helvetica,sans-serif;
+     font-weight:bold;
+     border-width:0px;
+     border-style:solid;
+     border-color:rgb(108,117,125);
+     border-radius:0.5rem;
+     padding-top:5px;
+     padding-bottom:5px;
+     padding-left:0.7rem;
+     padding-right:0.7rem;
+     cursor:pointer;
+     margin-right:0.6rem;
+     transition:background-color 0.15s,color 0.15s;
+     transition:box-shadow 0.15s;
+   }
+.store:hover{
+
+  box-shadow: 0 0 12px #3b44c0;
+  transform: translateY(-3px);
+}
+.store:active{
+  transform: scake(0.07);
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #2C2F33;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer i{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  padding: 9px;
+    transition: color 0.2s ease, background-color 0.2s ease,
+    border-shadow 0.3s ease;
+  }
+
+.footer i:hover {
+  background-color: rgba(66, 133, 244, 0.1); /* Light background on hover */
+  color: #4285F4;  /* Change icon color on hover */
+  box-shadow: 0 4px 8px rgba(66, 133, 244, 0.2); /* Light shadow for that hovering box effect */
+  transform: scale(1.05); /* Subtle grow effect */
+}
+
+/* Active/click effect with subtle shrinking */
+.footer i:active {
+  background-color: rgba(66, 133, 244, 0.2); /* Slightly darker blue on click */
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3); /* Darker shadow on click */
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
