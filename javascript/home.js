@@ -33,12 +33,12 @@ console.log(saver);
 
 document.getElementById('homebtn').addEventListener('click',()=>{
   if(!window.location.href.includes("home.html"))
-    window.location.href="../home.html";
+    window.location.href="home.html";
 });
 
 document.getElementById('savebtn').addEventListener('click',()=>{
-if(!window.location.href.includes("../saved.html"))
-  window.location.href="../saved.html";
+if(!window.location.href.includes("saved.html"))
+  window.location.href="saved.html";
 });
 
 
