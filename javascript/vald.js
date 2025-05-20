@@ -29,7 +29,7 @@ function vaildpass(){
   const inputpassword=document.querySelector('.password-input').value;
   const savedpassword=localStorage.getItem('masterpassword');
   if(inputpassword===savedpassword){
-    window.location.href="/home.html";
+    window.location.href="home.html";
 
   }
   else{
